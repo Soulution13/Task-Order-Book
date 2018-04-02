@@ -1,30 +1,29 @@
-# Fuse2
+# Test task - Frontend Developer
 
-Material Design Admin Template with Angular 5+ and Angular Material 2
+## Instructions
 
-## The Community
+# Before runing
 
-Share your ideas, discuss Fuse and help each other.
+For desired browser install CORS plugin for accessing bitstamp API and enable it. This is necessaray for getting live market prices.
+CHROME:
+https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi
 
-[Click here](https://join.slack.com/t/fuse-theme/shared_invite/enQtMzA1NDE4NzYwMjcyLWQxODE4ODM1MWU4MWJjMDhlMGEwYzM4Mzg3N2E4YzVlZThhZjNlOTQ1Y2Q5OTBlNDNkMzJhZDIwMjgxOWQ3YWU) to join our Slack workspace.
+FIREFOX:
+https://addons.mozilla.org/sl/firefox/addon/cors-everywhere/
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# Download git files
+git clone https://github.com/Soulution13/TestTask.git
 
-## Code scaffolding
+# Install dependencies
+npm install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+# Run application and open browser on localhost http://localhost:4200/
+ng serve
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+# Important notice
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+I'm using in memory web api for simulation. It work's well until there are any items in database. If you delete all items from open orders it's not possible to add any later. 
+Link to api project:
+https://github.com/angular/in-memory-web-api
