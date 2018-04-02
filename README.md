@@ -1,8 +1,8 @@
-# Test task - Frontend Developer
+## Test task - Frontend Developer
 
-## Instructions
+# Instructions
 
-# Before runing
+## Before runing
 
 For desired browser install CORS plugin for accessing bitstamp API and enable it. This is necessaray for getting live market prices.
 CHROME:
@@ -12,17 +12,17 @@ FIREFOX:
 https://addons.mozilla.org/sl/firefox/addon/cors-everywhere/
 
 
-# Download git files
+## Download git files
 git clone https://github.com/Soulution13/TestTask.git
 
-# Install dependencies
+## Install dependencies
 npm install
 
-# Run application and open browser on localhost http://localhost:4200/
+## Run application and open browser on localhost http://localhost:4200/
 ng serve
 
 
-# Important notice
+## Important notice
 
 I'm using in memory web api for simulation. It work's well until there are any items in database. If you delete all items from open orders it's not possible to add any later. 
 Link to api project:
