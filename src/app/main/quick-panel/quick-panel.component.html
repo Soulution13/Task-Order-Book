@@ -1,0 +1,33 @@
+<mat-list class="date" cdkFocusRegionStart>
+
+    <h3 matSubheader cdkFocusInit>
+        <span>Today</span>
+    </h3>
+
+    <div class="secondary-text mat-display-1 mb-0 p-16">
+        <div class="mb-12">
+            {{date | date:'EEEE'}}
+        </div>
+        <div fxLayout="row" fxLayoutAlign="start start">
+            <span> {{date | date:'d'}}</span>
+            <span class="mat-subheading-1">th</span>
+            <span> {{date | date:'MMMM'}}</span>
+        </div>
+    </div>
+</mat-list>
+
+<mat-divider cdkFocusRegionEnd></mat-divider>
+
+<mat-list>
+    <h3 matSubheader>
+        <span>Open limits</span>
+    </h3>
+
+    <mat-list-item *ngFor="let order of orderBookService.currentOrders | async">
+        <h3 matLine [ngClass]="{'green': order.type == 'SELL', 'red': order.type == 'BUY'}">{{order.type}} {{order.market}}</h3>
+        <p matLine class="secondary-text">Amount: {{order.amount}} {{order.market.substring(0,3)}}</p>
+        <p matLine class="secondary-text">Price: {{order.price}} {{order.market.substring(4,7)}}</p>
+    </mat-list-item>
+</mat-list>
+
+<mat-divider></mat-divider>
