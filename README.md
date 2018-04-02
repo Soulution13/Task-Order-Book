@@ -27,3 +27,14 @@ ng serve
 I'm using in memory web api for simulation. It work's well until there are any items in database. If you delete all items from open orders it's not possible to add any later. 
 Link to api project:
 https://github.com/angular/in-memory-web-api
+
+# Implemented functionalities
+
+- Buy sell order
+- List of markets from Bitstamp API
+- Simulated user balance
+- Removing / Adding orders
+- Error notifications
+- Live prices from Bitstamp
+- Sidebar
+
