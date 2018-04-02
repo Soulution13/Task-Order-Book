@@ -38,3 +38,7 @@ https://github.com/angular/in-memory-web-api
 - Live prices from Bitstamp
 - Sidebar
 
+## How it works
+
+Open Exchanges page and choose one pair. Then try to submit buy or sell order.
+
